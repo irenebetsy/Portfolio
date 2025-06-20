@@ -4,6 +4,9 @@ body {
   background-color: #f4f4f4;
 }
 
+
+
+
 nav {
   background-color: #1f1f1f;
   padding: 1rem;
@@ -18,7 +21,16 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #f4f4f4;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00C9A7;
   text-decoration: none;
   font-weight: bold;
 }
