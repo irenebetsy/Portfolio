@@ -128,7 +128,65 @@
 
   </section>
 
-    <section id="inquire" class="card">
+  
+  <!--Certificates-->
+  <section id="Certificates" class="card">
+    <h2>Certificates</h2>
+    <div class="certificate-box">
+      <!-- Project Box -->
+      <div class="project" onclick="openPopup('data-science')">
+        <img src="Assets\DS.png" alt="Data Science" />
+        <h3>Data Science</h3>
+      </div>
+      <div class="project" onclick="openPopup('data-visualization')">
+        <img src="Assets\DV.png" alt="Data Visualization" />
+        <h3>Data Visualization</h3>
+      </div>
+      <div class="project" onclick="openPopup('professional-dev')">
+        <img src="Assets\PD.png" alt="Professional Development" />
+        <h3>Professional Development</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popups -->
+  <div id="data-science" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('data-science')">&times;</span>
+      <h2>Data Science Certificates</h2>
+      <ul>
+        <li>The Complete Oracle SQL Bootcamp (2022) <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-2de055fa-ab58-4b6b-b7c2-23c86b5d0d15.jpg?v=1703195515000" target="_blank">View Certificate</a></li>
+        <li>Data Science Internship <a href="https://www.canva.com/design/DAGBjMCq4cE/Aagjs6vkL7F1pmS5K7g8yA/edit" target="_blank">View Certificate</a></li>
+        <li>Health Insurance Cross Sell Prediction Skills <a href="https://hicounselor.com/certificate/verify/ODk2NzYxNjg=" target="_blank">View Certificate</a></li> 
+      </ul>
+    </div>
+  </div>
+
+  <div id="data-visualization" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('data-visualization')">&times;</span>
+      <h2>Data Visualization Certificates</h2>
+      <ul>
+        <li>Data Visualization using Power BI <a href="https://www.canva.com/design/DAGBjMW8wuA/hmI1XDHdbjN5ZvFcevKH6w/edit" target="_blank" class="button">View Certificate</a></li>
+        <li>Data Science and Analytics <a href="https://www.life-global.org/certificate/db024bcd-0281-4a17-a5a1-227288ed09e2" target="_blank" class="button">View Certificate</a></li>
+        <li>Presenting Data <a href="https://www.life-global.org/certificate/ae292536-5de3-455d-8469-8e1ab7f6df9e" target="_blank" class="button">View Certificate</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <div id="professional-dev" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('professional-dev')">&times;</span>
+      <h2>Professional Development Certificates</h2>
+      <ul>
+        <li>Customer Experience(CX) for Business Success <a href="https://www.life-global.org/certificate/45713ce7-f44a-4d2c-b495-fcce2bdbf488" target="_blank">View Certificate</a></li>
+        <li>Effective Presentations <a href="https://www.life-global.org/certificate/f576277e-f8dc-453a-aca8-becfaf78d6a7" target="_blank">View Certificate</a></li>
+      </ul>
+    </div>
+  </div>  
+
+  
+  <section id="inquire" class="card">
     <h2>To Inquire</h2>
     <p><strong>Email:</strong> betsydelvin@gmail.com</p>
     <p><strong>GitHub:</Strong> <a href="https://github.com/irenebetsy" target="_blank">https://github.com/irenebetsy</a></p>
@@ -139,6 +197,16 @@
 
 </body>
 </html>
+
+<script>
+function openPopup(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+function closePopup(id) {
+  document.getElementById(id).style.display = 'none';
+}
+</script>
+
 
 
 
