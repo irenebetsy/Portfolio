@@ -91,3 +91,86 @@ nav a:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+
+
+
+
+/* Certificates */
+/* Certificates container */
+.certificate-box {
+  display: flex;
+  justify-content: space-between; /* left, center, right */
+  align-items: flex-start;        /* align items at the top */
+  background-color: #c5d5e6; /* light blue shade */
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  gap: 20px; /* spacing between cards */
+}
+
+.certificate-box > div {
+  position: relative;   /* ✅ only certificate items get relative positioning */
+  flex: 1;              /* let them grow evenly */
+  text-align: center;
+}
+
+.certificate-box img {
+  width: 100%;          /* make image smaller than card */
+  height: 150px;       /* fixed height */
+  object-fit: cover;   /* crop neatly */
+  display: block;
+  margin: 0 auto;      /* centers image horizontally */
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.certificate-box h3 {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Certificates popup*/ 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #e8f3ff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.popup-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
