@@ -120,7 +120,7 @@ nav a:hover {
 
 .certificate-box img {
   width: 100%;          /* make image smaller than card */
-  height: 150px;       /* fixed height */
+  height: 300px;       /* fixed height */
   object-fit: cover;   /* crop neatly */
   display: block;
   margin: 0 auto;      /* centers image horizontally */
@@ -137,7 +137,7 @@ nav a:hover {
   color: white;
   padding: 4px 8px;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* Certificates popup*/ 
@@ -171,6 +171,7 @@ nav a:hover {
     font-size: 24px;
     cursor: pointer;
 }
+
 
 
 
